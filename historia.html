@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Baúl de videojuegos</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+
+    <link href="img/favicon.ico" rel="icon">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Oswald:wght@600&display=swap" rel="stylesheet">
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Cargando...</span>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="mb-0 text-primary text-uppercase"><i class="fa fa-gamepad me-3"></i>Baúl de videojuegos</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                <a href="historia.html" class="nav-item nav-link">Historia</a>
+                <a href="generos.html" class="nav-item nav-link">Géneros</a>
+                <a href="resenas.html" class="nav-item nav-link">Reseñas</a>
+                <a href="ayuda_inicio.html" class="nav-item nav-link">Ayuda</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-3 text-white text-uppercase mb-3 animated slideInDown">Historia</h1>
+        </div>
+    </div>
+
+
+
+    <audio src="audio/historia_audio.mp3" id="miAudio"></audio>
+
+
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="wow fadeIn" data-wow-delay="0.1s">
+                <div class="bg-secondary p-5">
+                    <h1 class="text-uppercase mb-4">Historia de los videojuegos</h1>
+
+
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <h3>¿Qué son los videojuegos?</h3>
+                        </div>
+                        <div class="col-lg-3">
+                            <button type="button" class="btn w-100 btn-danger" id="reproduccionBtn">Reproducir música</button>
+                        </div>
+                        
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <p class="mb-4 text-light" style="text-align: right;">
+                        <i>“Jugar con videojuegos implica poner en marcha muchas de nuestras capacidades y habilidades,<br>
+                        necesitamos concentración, atención, control, y mucha, pero mucha emoción.”.</i>
+                        <br>
+                        <i>(Gil, A. Vida, T. 2007:33­34)</i>
+                        </p>
+                    </div>
+
+                    <div class="row">
+                        <p class="mb-4 text-white" style="text-align: justify;">
+                            Los videojuegos pueden ser considerados como una nueva forma de expresión artística en las últimas décadas, pero al igual que ocurre con las expresiones artísticas contemporáneas, la sociedad todavía no es capaz de asimilarlas y “hacerlas suyas”. El de los videojuegos es un fenómeno incomprensible para muchos; la sociedad parece casi incapaz de darle un significado, como en el arte contemporáneo, que a su vez no encuentra en la crítica tradicional la herramienta para analizar y estructurar una opinión, simplemente   se   limitan   a   describir   como   está compuesta   la   obra.   Esto   es   lo   que   ocurre   con   los videojuegos, la mayoría de los medios de comunicación se limitan a considerar el aspecto gráfico, o la adaptación en videojuego de alguna película de Hollywood. De la misma manera como se hace en una reseña de película, libro o disco. Pero los videojuegos, como el arte contemporáneo, no pueden entrar en estas categorías tradicionales. Los videojuegos son un conjunto de todas estas “artes”; existe el aspecto gráfico, una historia, una música, y sobre todo, el aspecto lúdico y de jugabilidad. Por esto motivo al preguntar a algún jugador para qué sirve jugar a videojuegos, la respuesta es invariablemente la misma: para   nada.   Esto   es   debido   a   que   todavía   no   se   ha   encontrado   una   herramienta   adecuada   para categorizar, definir, estructurar y comprender este nuevo arte. Esto podría deberse a que el videojuego es un producto típicamente posmoderno, algo tremendamente subjetivo y objetivo a la vez, individual y colectivo al mismo tiempo.<br><br>
+                            A pesar de lo anteriormente dicho, se le ha dado muchas definiciones que pueden simplificar el termino, pero que omiten muchos aspectos que componen a un videojuego. Un ejemplo es la definición que le da la RAE, un videojuego es un “juego electrónico que se visualiza en una pantalla”.<br><br>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <h3>Primeros videojuegos</h3>
+                        <hr>
+                        <div class="row">
+                            <h5><u><strong>1952</strong></u></h5>
+                            <p class="mb-4 text-white" style="text-align: justify;">
+                                Durante bastante tiempo ha sido complicado señalar cual fue el primer videojuego, principalmente debido a las múltiples definiciones que de este se han ido estableciendo. Sin embargo, muchos coinciden en considerar como primer videojuego el “Nought and crosses”, también llamado OXO, que básicamente consiste en el juego “tres en raya” o “gato”. Fue <strong>desarrollado por Alexander S.Douglas</strong>, se ejecutaba sobre la computadora EDSAC y permitía enfrentar a un jugador humano contra la máquina.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="img/historia1.png" style="max-width: 100%; max-height: 90%; border: 2px solid black;">
+                                <p>Nought and Crosses (1952)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h5><u><strong>1958</strong></u></h5>
+                            <p class="mb-4 text-white" style="text-align: justify;">
+                                <strong>William Higginbotham</strong> creó, sirviéndose de un programa para el cálculo de trayectorias y un osciloscopio, Tennis for Two (tenis para dos): un simulador de tenis de mesa para entretenimiento de los visitantes de la exposición Brookhaven National Laboratory. Este videojuego fue el primero en permitir el juego entre dos jugadores humanos.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="gif/historia2.gif" style="max-width: 100%; max-height: 90%; border: 2px solid black;">
+                                <p>Tennis for Two (1958)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h5><u><strong>1962</strong></u></h5>
+                            <p class="mb-4 text-white" style="text-align: justify;">
+                                <strong>Steve Russell</strong>, un estudiante del Instituto de Tecnología de Massachussets, dedicó seis meses a crear un juego para computadora usando gráficos vectoriales: Spacewar. Es considerado formalmente como el primer videojuego de la historia. Consistía en que un triángulo debía enfrentarse a rocas espaciales con disparos de su nave. Si eres un apasionado gamer, lo más probablemente es que hayas jugado alguna versión de este clásico que lo inició todo.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="gif/historia3.gif" style="max-width: 100%; max-height: 90%; border: 2px solid black;">
+                                <p>Spacewar (1962)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h5><u><strong>1966</strong></u></h5>
+                            <p class="mb-4 text-white" style="text-align: justify;">
+                                <strong>Ralph Baer empezó a desarrollar junto a Albert Maricon y Ted Dabney</strong>, un proyecto de videojuego llamado Fox and Hounds dando inicio al videojuego doméstico. Este proyecto evolucionaría hasta convertirse en la Magnavox Odyssey, el primer sistema doméstico de videojuegos lanzado en 1972 que se conectaba a la televisión y que permitía jugar a varios juegos pregrabados.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="gif/historia4.gif" style="max-width: 100%; max-height: 90%; border: 2px solid black;">
+                                <p>Magnavox Odyssey (1972)</p>
+                            </div>
+                        </div>
+                        <h3>La eclosión de los videojuegos</h3>
+                        <hr>
+                        <div class="row">
+                            <h5><u><strong>1972</strong></u></h5>
+                            <p class="mb-4 text-white" style="text-align: justify;">
+                                La empresa <strong>Atari es fundada</strong> y Nolan Bushnell con Allan Alcorn crean ‘Pong’, el primer éxito comercial de las llamadas máquinas de ‘Arcade’, que tendrían su éra dorada el resto de la década, con juegos clásicos como ‘Space Invaders’ (1978), Galaxian (1979) y Pac-Man (1980). ‘Pong’ fue la piedra angular del videojuego como industria. Durante los años siguientes se implantaron numerosos avances técnicos en los videojuegos (destacando los microprocesadores y los chips de memoria). Aparecieron en los salones recreativos juegos como Space Invaders (Taito) o Asteroids (Atari).
+                                </p>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="gif/historia5.gif" style="max-width: 100%; max-height: 90%; border: 2px solid black;">
+                                <p>Pac-Man (1980)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h5><u><strong>1977</strong></u></h5>
+                            <p class="mb-4 text-white" style="text-align: justify;">
+                                Atari lanza al mercado la ‘Atari 2600’, la primera consola para el hogar con controles, juegos a color y cartuchos intercambiables, dando el primer paso hacía lo que sería la nueva etapa de los videojuegos.
+                                </p>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="img/historia6.jpg" style="max-width: 100%; max-height: 90%; border: 2px solid black;">
+                                <p>Atari 2600 (1977)</p>
+                            </div>
+                        </div>
+                        <h3>La década de los 8 bits</h3>
+                        <hr>
+                        <div class="row">
+                            <p class="mb-4 text-white" style="text-align: justify;">
+                                Los años 80 comenzaron con un fuerte crecimiento en el sector del videojuego alentado por la popularidad de los salones de máquinas recreativas y de las primeras videoconsolas aparecidas durante la década de los 70. Durante estos años destacan sistemas como Oddyssey 2 (Phillips), Intellivision (Mattel), Colecovision (Coleco), Atari 5200, Commodore 64, Turbografx (NEC). Por otro lado en las máquinas recreativas triunfaron juegos como el famoso Pacman (Namco), Battle Zone (Atari), Pole Position (Namco), Tron (Midway) o Zaxxon (Sega).
+                            </p>
+                        </div>
+                        <div class="row">
+                            <h5><u><strong>1981</strong></u></h5>
+                            <p class="mb-4 text-white" style="text-align: justify;">
+                                Tratando de competir mundialmente con Pac-Man, Shigeru Miyamoto diseñó los niveles y dirigió Donkey-Kong, el clásico arcade donde una princesa debía ser rescatada por Jumpman, que años más tarde sería conocido como Mario Bros.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="gif/historia7.gif" style="max-width: 100%; max-height: 90%; border: 2px solid black;">
+                                <p>Donkey-Kong (1981)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h5><u><strong>1983</strong></u></h5>
+                            <p class="mb-4 text-white" style="text-align: justify;">
+                                La industria de los videojuegos colapsa. Debido a su gran demanda, los videojuegos comenzaron a producirse cada vez más rápido, lo que causó peores videojuegos cada vez, con resultados tan desastrosos como 'E.T' de Atari, considerado el peor juego de la historia. Esto causó que los compradores dejaran de comprar videojuegos y, así, el colapso de casi toda la industria.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="gif/historia8.gif" style="max-width: 100%; max-height: 90%; border: 2px solid black;">
+                                <p>E.T. the Extra-Terrestrial (1983)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h5><u><strong>1985</strong></u></h5>
+                            <p class="mb-4 text-white" style="text-align: justify;">
+                                Llega a Japón (y dos años después a Estados Unidos) la Nintendo Entertaiment System, NES. De la mano de los más de 10 millones de copias vendidas de Super Mario Bros., la nueva consola revivió a la industria de los videojuegos tras la bancarrota de la industria de 1983.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="gif/historia9.gif" style="max-width: 100%; max-height: 90%; border: 2px solid black;">
+                                <p>Super Mario Bros (1985)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h5><u><strong>1989/1991</strong></u></h5>
+                            <p class="mb-4 text-white" style="text-align: justify;">
+                                A principios de los años 90 las videoconsolas dieron un importante salto técnico gracias a la competición de la llamada "generación de 16 bits" compuesta por la Mega Drive, la Super Nintendo Entertainmet de Nintendo, la PC Engine de NEC, conocida como Turbografx en occidente y la CPS Changer de (Capcom). Ademas, se dice que comienza la cuarta generación de consolas con el lanzamiento de la Sega Genesis, que tenía un enfoque mucho más maduro y se posicionó como la competencia directa de Nintendo que, en 1991, apuesta todo a la Super Nintendo Entertaiment System. Así nace la rivalidad entre Sonic y Mario, las mascotas de ambas compañías.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="gif/historia10.gif" style="max-width: 100%; max-height: 90%; border: 2px solid black;">
+                                <p>Sonic the Hedgehog (1991)</p>
+                            </div>
+                        </div>
+                        <h3>La revolución de las 3D</h3>
+                        <hr>
+                        <div class="row">
+                            <h5><u><strong>1993</strong></u></h5>
+                            <p class="mb-4 text-white" style="text-align: justify;">
+                                El mundo conoce a Mortal Kombat y se desata una controversia por su contenido violento. El escándalo es tal que se crea el sistema Entertainment Software Rating Board, que califica los juegos de acuerdo a su contenido. Curiosamente, este mismo año sale DOOM, demostrando que los computadores son una nueva opción para jugar videojuegos y consolidando el género First Person Shooter.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="gif/historia14.gif" style="max-width: 100%; max-height: 90%; border: 2px solid black;">
+                                <p>Mortal Kombat (1992)</p>
+                            </div>
+                            <div class="col text-center">
+                                <img src="gif/historia11.gif" style="max-width: 100%; max-height: 90%; border: 2px solid black;">
+                                <p>Doom (1993)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h5><u><strong>1995/1996</strong></u></h5>
+                            <p class="mb-4 text-white" style="text-align: justify;">
+                                Sony llega pisando fuerte a la “guerra de consolas” con la primera PlayStation que, junto con la Sega Saturn, popularizaron el formato de CD para los videojuegos. Los videojuegos poligonales comienzan a ganar adeptos y atrás se van quedando los píxeles.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="gif/historia12.gif" style="max-width: 100%; max-height: 90%; border: 2px solid black;">
+                                <p>PlayStation (1995)</p>
+                            </div>
+                            <div class="col text-center">
+                                <img src="gif/historia13.gif" style="max-width: 100%; max-height: 90%; border: 2px solid black;">
+                                <p>Crash Bandicoot (1996)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h5><u><strong>1999</strong></u></h5>
+                            <p class="mb-4 text-white" style="text-align: justify;">
+                                En el ocaso de Sega, la compañía lanza el modelo Dreamcast, la primera consola casera que permitió el juego en línea, algo que ya ocurría con el original Everquest en PC, donde cientos de usuarios se reunían para vivir aventuras en grupo.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="gif/historia15.gif" style="max-width: 100%; max-height: 90%; border: 2px solid black;">
+                                <p>Dreamcast (1999)</p>
+                            </div>
+                        </div>
+                        <h3>El nuevo siglo</h3>
+                        <hr>
+                        <div class="row">
+                            <h5><u><strong>2001</strong></u></h5>
+                            <p class="mb-4 text-white" style="text-align: justify;">
+                                Microsoft se suma al mercado de videojuegos con la XBOX, un hit de ventas impulsado por Halo: Combat Evolved, un juego que adaptó la popular mecánica de disparos de juegos como DOOM para las consolas y que se convertiría en un pilar de los juegos en línea. 
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="gif/historia17.gif" style="max-width: 100%; max-height: 90%; border: 2px solid black;">
+                                <p>Xbox Classic (2001)</p>
+                            </div>
+                            <div class="col text-center">
+                                <img src="gif/historia16.gif" style="max-width: 100%; max-height: 90%; border: 2px solid black;">
+                                <p>Halo: Combat Evolved (2001)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h5><u><strong>2003</strong></u></h5>
+                            <p class="mb-4 text-white" style="text-align: justify;">
+                                Se lanza mundialmente el servicio de compra y adquisición de videojuegos Steam. Dirigido por la desarrolladora Valve, esta tienda permitió a jugadores de todo el mundo, comprar videojuegos para computadoras personales.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="gif/historia18.gif" style="max-width: 100%; max-height: 90%; border: 2px solid black;">
+                                <p>Steam (2003)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h5><u><strong>2006</strong></u></h5>
+                            <p class="mb-4 text-white" style="text-align: justify;">
+                                Llega la séptima generación de consolas con la XBOX 360, Playstation 3 y la Nintendo Wii, que permitieron jugar videojuegos en alta definición y con un realismo nunca antes visto.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="img/historia19.jpg" style="max-width: 100%; max-height: 90%; border: 2px solid black;">
+                                <p>Séptima generación de consolas (2006)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h5><u><strong>2008</strong></u></h5>
+                            <p class="mb-4 text-white" style="text-align: justify;">
+                                World of Warcraft supera los 10 millones de jugadores en línea y se convierte en el juego multijugador masivo en línea más grande de la historia. Así se pone en evidencia que los videojuegos ya han dejado de ser un nicho y son un fenómeno masivo.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="img/historia21.jpg" style="max-width: 100%; max-height: 90%; border: 2px solid black;">
+                                <p>World of Warcraft (2004)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h5><u><strong>2009</strong></u></h5>
+                            <p class="mb-4 text-white" style="text-align: justify;">
+                                Los videojuegos comienzan a popularizarse en teléfonos móviles con pioneros como Angry Birds y Farmville. Los ingresos generados por la PlayStore de Android y la Apple Store en el primero semestre de 2021 fue de 44.7 mil millones de dólares. Este mismo año se lanza al mercado League of Legends. El juego más popular hasta la fecha.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="gif/historia22.gif" style="max-width: 100%; max-height: 90%; border: 2px solid black;">
+                                <p>League of Legends (2009)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h5><u><strong>2011/2012</strong></u></h5>
+                            <p class="mb-4 text-white" style="text-align: justify;">
+                                Comienza la octava generación de consolas con la WiiU, PlayStation 4 y XBOX One. Los proyectos autogestionados por la comunidad comienzan a dar frutos, videojuegos como Star Citizen, Shenmue III y las gafas de realidad virtual Oculus Rift.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="img/historia23.jpg" style="max-width: 100%; max-height: 90%; border: 2px solid black;">
+                                <p>Octava generación de consolas (2012)</p>
+                            </div>
+                            <div class="col text-center">
+                                <img src="img/historia24.jpg" style="max-width: 100%; max-height: 90%; border: 2px solid black;">
+                                <p>Oculus Rift (2012)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h5><u><strong>2017</strong></u></h5>
+                            <p class="mb-4 text-white" style="text-align: justify;">
+                                El mundo entero conoce a Fornite, un videojuego que popularizó el género Battle Royale y que en 2020 tuvo a más de 300 millones de personas jugándolo. Al género llegarían nuevos competidores como FreeFire, Call of Duty y Apex Legends.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="gif/historia25.gif" style="max-width: 100%; max-height: 90%; border: 2px solid black;">
+                                <p>Fortnite (2017)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h5><u><strong>2020</strong></u></h5>
+                            <p class="mb-4 text-white" style="text-align: justify;">
+                                Con la llegada de la novena generación de consolas, los videojuegos comienzan a posicionarse cada vez más como un servicio y no como un producto con PlayStation Now y Game Pass, donde los usuarios pagan por una suscripción a una biblioteca inmensa de videojuegos.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="img/historia26.jpg" style="max-width: 100%; max-height: 90%; border: 2px solid black;">
+                                <p>PlayStation Now y Game Pass (2020)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h5><u><strong>2021</strong></u></h5>
+                            <p class="mb-4 text-white" style="text-align: justify;">
+                                Los deportes electrónicos son una nueva forma de espectáculo y miles de personas ven a otros jugar en línea y sueñan con llegar a finales de juegos como LoL o Dota 2 que, para su versión de 2021, prepara una piscina de premios de más de 40 millones de dólares, lo que la hace el deporte que más premios da en el mundo.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="gif/historia27.gif" style="max-width: 100%; max-height: 90%; border: 2px solid black;">
+                                <p>League of Legends World Championship (2021)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <br>
+                                <br>
+                                <h3>Referencias</h3>
+                                <hr>
+                                <p class="mb-4 text-white" >
+                                    <ul style="text-align: justify;">
+                                        <li>UPC. (s.f). <i>Historia de los videojuegos</i>. Recuperado de UPC Sitio web: <u>https://www.fib.upc.edu/retro-informatica/historia/videojocs.html</u></li>
+                                        <li>Casanova, F. (2018). <i>Historia resumida de los videojuegos</i>. Recuperado de Historias de nuestra historia Sitio web: <u>https://hdnh.es/historia-resumida-videojuegos/</u></li>
+                                        <li>CANAL TRECE. (2021). <i>Historia de los videojuegos: ¿Cuál fue el primero?</i>. Recuperado de CANAL DE TRECE Sitio web: <u>https://canaltrece.com.co/noticias/videojuegos-historia-linea-de-tiempo-nintendo-sega-atari/</u></li>
+                                        <li>Belli, S. (2008). <i>Breve historia de los videojuegos</i>. Recuperado de Redalyc Sitio web: <u>https://www.redalyc.org/pdf/537/53701409.pdf</u></li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-secondary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Bául de videojuegos</a>, Todos los derechos reservados.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        
+                        Realizado por  <a class="border-bottom">David Alejandro Condes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/historia.js"></script>
+</body>
+
+</html>
